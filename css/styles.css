@@ -164,7 +164,14 @@ body {
   cursor: pointer;
 }
 .hero {
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 188px 0;
 }
 .hero-title {
@@ -239,12 +246,62 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.team-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--modal-btn-color);
+  display: block;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-soc-link:hover {
+  background-color: #404bbf;
+}
+/*?-----------------------Customers-------------------------- */
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-item {
+  width: calc((100% - 168px) / 6);
+  height: 88px;
+}
+.customers-link {
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+}
+.customers-icon {
+  fill: currentColor;
+}
+.customers-link:is(:hover, :focus) {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+
 /*?-----------------------FOOTER-------------------------- */
 .footer {
   background-color: var(--tittle-text-color);
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -257,6 +314,42 @@ body {
 .logo-footer-span {
   color: #f4f4fd;
 }
+.footer-soc-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+}
+.footer-container {
+  display: flex;
+}
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-white-color);
+  opacity: 0.1;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-soc-container {
+  margin-left: 120px;
+}
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -264,6 +357,7 @@ body {
   color: #e7e9fc;
   margin-top: 16px;
 }
+
 /*?-----------------------PORTFOLIO-------------------------- */
 .modal-btn {
   font-family: "Roboto", sans-serif;
