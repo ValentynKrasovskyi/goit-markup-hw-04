@@ -8,6 +8,7 @@
   --section-title-color: #2e2f42;
   --modal-btn-color: #4d5ae5;
   --modal-btn-background: #f4f4fd;
+  --link-accent: #404bbf;
 }
 
 /*?-----------------------RESET-------------------------- */
@@ -118,7 +119,7 @@ body {
   padding: 24px 0;
 }
 .menu-link:is(:hover, :focus) {
-  color: #404bbf;
+  color: var(--link-accent);
 }
 .adress {
   display: flex;
@@ -138,7 +139,7 @@ body {
 }
 
 .adress-link:is(:hover, :focus) {
-  color: #404bbf;
+  color: var(--link-accent);
 }
 /*?-----------------------HERO-------------------------- */
 .main-btn {
